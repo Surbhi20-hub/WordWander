@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Basics</title>
+    <link rel="stylesheet" href="german-basics.css">
+    <style>
+        /* Debugging CSS for button visibility */
+        .next-step-btn {
+            background-color: #127f24;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .next-step-btn:hover {
+            background-color: #0bb140;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn Basics of Spanish</h1>
+        <p>Let's start with the Spanish alphabet!</p>
+    </header>
+    
+    <div class="language-container">
+      <div class="card-grid">
+        <div class="card">
+          <div class="letter">A</div>
+          <div class="description">ah</div>
+        </div>
+        <div class="card">
+          <div class="letter">B</div>
+          <div class="description">bay</div>
+        </div>
+        <div class="card">
+          <div class="letter">C</div>
+          <div class="description">say</div>
+        </div>
+        <div class="card">
+          <div class="letter">CH</div>
+          <div class="description">chay</div>
+        </div>
+        <div class="card">
+          <div class="letter">D</div>
+          <div class="description">day</div>
+        </div>
+        <div class="card">
+          <div class="letter">E</div>
+          <div class="description">ay</div>
+        </div>
+        <div class="card">
+          <div class="letter">F</div>
+          <div class="description">effay</div>
+        </div>
+        <div class="card">
+          <div class="letter">G</div>
+          <div class="description">hay</div>
+        </div>
+        <div class="card">
+          <div class="letter">H</div>
+          <div class="description">ah-chay</div>
+        </div>
+        <div class="card">
+          <div class="letter">I</div>
+          <div class="description">ee</div>
+        </div>
+        <div class="card">
+          <div class="letter">J</div>
+          <div class="description">ho-tah</div>
+        </div>
+        <div class="card">
+          <div class="letter">K</div>
+          <div class="description">kah</div>
+        </div>
+        <div class="card">
+          <div class="letter">L</div>
+          <div class="description">ellay</div>
+        </div>
+        <div class="card">
+          <div class="letter">LL</div>
+          <div class="description">ay-yay</div>
+        </div>
+        <div class="card">
+          <div class="letter">M</div>
+          <div class="description">em-may</div>
+        </div>
+        <div class="card">
+          <div class="letter">N</div>
+          <div class="description">en-nay</div>
+        </div>
+        <div class="card">
+          <div class="letter">Ñ</div>
+          <div class="description">en-yay</div>
+        </div>
+        <div class="card">
+          <div class="letter">O</div>
+          <div class="description">oh</div>
+        </div>
+        <div class="card">
+          <div class="letter">P</div>
+          <div class="description">pay</div>
+        </div>
+        <div class="card">
+          <div class="letter">Q</div>
+          <div class="description">koo</div>
+        </div>
+        <div class="card">
+          <div class="letter">R</div>
+          <div class="description">er-ray</div>
+        </div>
+        <div class="card">
+          <div class="letter">RR</div>
+          <div class="description">err-ray</div>
+        </div>
+        <div class="card">
+          <div class="letter">S</div>
+          <div class="description">es-say</div>
+        </div>
+        <div class="card">
+          <div class="letter">T</div>
+          <div class="description">tay</div>
+        </div>
+        <div class="card">
+          <div class="letter">U</div>
+          <div class="description">oo</div>
+        </div>
+        <div class="card">
+          <div class="letter">V</div>
+          <div class="description">bay</div>
+        </div>
+        <div class="card">
+          <div class="letter">W</div>
+          <div class="description">dob-lay-bay</div>
+        </div>
+        <div class="card">
+          <div class="letter">X</div>
+          <div class="description">ek-kees</div>
+        </div>
+        <div class="card">
+          <div class="letter">Y</div>
+          <div class="description">yay</div>
+        </div>
+        <div class="card">
+          <div class="letter">Z</div>
+          <div class="description">say-tah</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Step Button -->
+    <div class="button-container">
+        <button id="nextStepBtn" class="next-step-btn">Next Step</button>
+    </div>
+
+    <div class="pdf-section">
+        <a href="basics.pdf" download class="pdf-download-btn">Download PDF</a>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const nextStepBtn = document.getElementById('nextStepBtn');
+          
+          nextStepBtn.addEventListener('click', function () {
+              const language = "spanish";  // Change this based on the file, e.g., "spanish", "french"
+              window.location.href = `session.php?lang=${language}`;
+          });
+      });
+  </script>
+</body>
+</html>

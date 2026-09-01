@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Basics</title>
+    <link rel="stylesheet" href="german-basics.css">
+</head>
+<body>
+    <!-- Chinese Pinyin -->
+    <div class="language-container">
+        <header>
+            <h1>Learn Basics of Chinese</h1>
+            <p>Let's start with the Chinese alphabet!</p>
+        </header>
+        <div class="card-grid">
+            <div class="card"><div class="letter">A</div><div class="description">ā</div></div>
+            <div class="card"><div class="letter">B</div><div class="description">bī</div></div>
+            <div class="card"><div class="letter">C</div><div class="description">cī</div></div>
+            <div class="card"><div class="letter">D</div><div class="description">dī</div></div>
+            <div class="card"><div class="letter">E</div><div class="description">ē</div></div>
+            <div class="card"><div class="letter">F</div><div class="description">fū</div></div>
+            <div class="card"><div class="letter">G</div><div class="description">gē</div></div>
+            <div class="card"><div class="letter">H</div><div class="description">hā</div></div>
+            <div class="card"><div class="letter">I</div><div class="description">ī</div></div>
+            <div class="card"><div class="letter">J</div><div class="description">jī</div></div>
+            <div class="card"><div class="letter">K</div><div class="description">kā</div></div>
+            <div class="card"><div class="letter">L</div><div class="description">lē</div></div>
+            <div class="card"><div class="letter">M</div><div class="description">mā</div></div>
+            <div class="card"><div class="letter">N</div><div class="description">nā</div></div>
+            <div class="card"><div class="letter">O</div><div class="description">ō</div></div>
+            <div class="card"><div class="letter">P</div><div class="description">pī</div></div>
+            <div class="card"><div class="letter">Q</div><div class="description">qī</div></div>
+            <div class="card"><div class="letter">R</div><div class="description">rī</div></div>
+            <div class="card"><div class="letter">S</div><div class="description">sī</div></div>
+            <div class="card"><div class="letter">T</div><div class="description">tī</div></div>
+            <div class="card"><div class="letter">U</div><div class="description">ū</div></div>
+            <div class="card"><div class="letter">W</div><div class="description">wū</div></div>
+            <div class="card"><div class="letter">X</div><div class="description">xī</div></div>
+            <div class="card"><div class="letter">Y</div><div class="description">yī</div></div>
+            <div class="card"><div class="letter">Z</div><div class="description">zī</div></div>
+        </div>
+    </div>
+
+    <!-- Next Step Button -->
+    <div class="button-container">
+        <button id="nextStepBtn" class="next-step-btn">Next Step</button>
+    </div>
+
+    <div class="pdf-section">
+        <a href="basics.pdf" download class="pdf-download-btn">Download PDF</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nextStepBtn = document.getElementById('nextStepBtn');
+            
+            nextStepBtn.addEventListener('click', function () {
+                const language = "chinese";  // Change this based on the file, e.g., "spanish", "french"
+                window.location.href = `session.php?lang=${language}`;
+            });
+        });
+    </script>
+</body>
+</html>

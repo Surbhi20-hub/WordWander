@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Basics</title>
+    <link rel="stylesheet" href="german-basics.css">
+</head>
+<body>
+    <!-- German Alphabet -->
+    <div class="language-container">
+        <header>
+            <h1>Learn Basics of German</h1>
+            <p>Let's start with the German alphabet!</p>
+        </header>
+        <div class="card-grid">
+            <div class="card"><div class="letter">A</div><div class="description">ah</div></div>
+            <div class="card"><div class="letter">B</div><div class="description">bay</div></div>
+            <div class="card"><div class="letter">C</div><div class="description">tsay</div></div>
+            <div class="card"><div class="letter">D</div><div class="description">day</div></div>
+            <div class="card"><div class="letter">E</div><div class="description">ay</div></div>
+            <div class="card"><div class="letter">F</div><div class="description">ef</div></div>
+            <div class="card"><div class="letter">G</div><div class="description">gay</div></div>
+            <div class="card"><div class="letter">H</div><div class="description">hah</div></div>
+            <div class="card"><div class="letter">I</div><div class="description">ee</div></div>
+            <div class="card"><div class="letter">J</div><div class="description">yot</div></div>
+            <div class="card"><div class="letter">K</div><div class="description">kah</div></div>
+            <div class="card"><div class="letter">L</div><div class="description">el</div></div>
+            <div class="card"><div class="letter">M</div><div class="description">em</div></div>
+            <div class="card"><div class="letter">N</div><div class="description">en</div></div>
+            <div class="card"><div class="letter">O</div><div class="description">oh</div></div>
+            <div class="card"><div class="letter">P</div><div class="description">pay</div></div>
+            <div class="card"><div class="letter">Q</div><div class="description">koo</div></div>
+            <div class="card"><div class="letter">R</div><div class="description">air</div></div>
+            <div class="card"><div class="letter">S</div><div class="description">ess</div></div>
+            <div class="card"><div class="letter">T</div><div class="description">tay</div></div>
+            <div class="card"><div class="letter">U</div><div class="description">oo</div></div>
+            <div class="card"><div class="letter">V</div><div class="description">fow</div></div>
+            <div class="card"><div class="letter">W</div><div class="description">vay</div></div>
+            <div class="card"><div class="letter">X</div><div class="description">iks</div></div>
+            <div class="card"><div class="letter">Y</div><div class="description">üpsilon</div></div>
+            <div class="card"><div class="letter">Z</div><div class="description">tsay</div></div>
+            <div class="card"><div class="letter">Ä</div><div class="description">ä (eh)</div></div>
+            <div class="card"><div class="letter">Ö</div><div class="description">ö (er)</div></div>
+            <div class="card"><div class="letter">Ü</div><div class="description">ü (u)</div></div>
+            <div class="card"><div class="letter">ß</div><div class="description">ess-tset</div></div>
+        </div>
+
+        <div class="button-container">
+            <button id="nextStepBtn" class="next-step-btn">Next Step</button>
+        </div>
+        
+        <div class="pdf-section">
+            <a href="basics.pdf" download class="pdf-download-btn">Download PDF</a>
+        </div>
+    </div>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nextStepBtn = document.getElementById('nextStepBtn');
+            
+            nextStepBtn.addEventListener('click', function () {
+                const language = "german";  // Change this based on the file, e.g., "spanish", "french"
+                window.location.href = `session.php?lang=${language}`;
+            });
+        });
+    </script>
+</body>
+</html>

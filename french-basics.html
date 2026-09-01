@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Basics</title>
+    <link rel="stylesheet" href="german-basics.css">
+</head>
+<body>
+    <header>
+        <h1>Learn Basics of French</h1>
+        <p>Start with the French alphabet and accents!</p>
+    </header>
+    
+    <div class="language-container">
+        <div class="card-grid">
+            <!-- Standard Letters -->
+            <div class="card">
+                <div class="letter">A</div>
+                <div class="description">a</div>
+            </div>
+            <div class="card">
+                <div class="letter">B</div>
+                <div class="description">bé</div>
+            </div>
+            <div class="card">
+                <div class="letter">C</div>
+                <div class="description">cé</div>
+            </div>
+            <div class="card">
+                <div class="letter">D</div>
+                <div class="description">dé</div>
+            </div>
+            <div class="card">
+                <div class="letter">E</div>
+                <div class="description">e</div>
+            </div>
+            <div class="card">
+                <div class="letter">F</div>
+                <div class="description">effe</div>
+            </div>
+            <div class="card">
+                <div class="letter">G</div>
+                <div class="description">gé</div>
+            </div>
+            <div class="card">
+                <div class="letter">H</div>
+                <div class="description">ache</div>
+            </div>
+            <div class="card">
+                <div class="letter">I</div>
+                <div class="description">i</div>
+            </div>
+            <div class="card">
+                <div class="letter">J</div>
+                <div class="description">ji</div>
+            </div>
+            <div class="card">
+                <div class="letter">K</div>
+                <div class="description">ka</div>
+            </div>
+            <div class="card">
+                <div class="letter">L</div>
+                <div class="description">elle</div>
+            </div>
+            <div class="card">
+                <div class="letter">M</div>
+                <div class="description">emme</div>
+            </div>
+            <div class="card">
+                <div class="letter">N</div>
+                <div class="description">enne</div>
+            </div>
+            <div class="card">
+                <div class="letter">O</div>
+                <div class="description">o</div>
+            </div>
+            <div class="card">
+                <div class="letter">P</div>
+                <div class="description">pé</div>
+            </div>
+            <div class="card">
+                <div class="letter">Q</div>
+                <div class="description">ku</div>
+            </div>
+            <div class="card">
+                <div class="letter">R</div>
+                <div class="description">erre</div>
+            </div>
+            <div class="card">
+                <div class="letter">S</div>
+                <div class="description">esse</div>
+            </div>
+            <div class="card">
+                <div class="letter">T</div>
+                <div class="description">té</div>
+            </div>
+            <div class="card">
+                <div class="letter">U</div>
+                <div class="description">u</div>
+            </div>
+            <div class="card">
+                <div class="letter">V</div>
+                <div class="description">vé</div>
+            </div>
+            <div class="card">
+                <div class="letter">W</div>
+                <div class="description">double vé</div>
+            </div>
+            <div class="card">
+                <div class="letter">X</div>
+                <div class="description">iks</div>
+            </div>
+            <div class="card">
+                <div class="letter">Y</div>
+                <div class="description">i grec</div>
+            </div>
+            <div class="card">
+                <div class="letter">Z</div>
+                <div class="description">zède</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="nextStepBtn" class="next-step-btn">Next Step</button>
+        </div>
+
+        <div class="pdf-section">
+            <a href="basics.pdf" download class="pdf-download-btn">Download PDF</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nextStepBtn = document.getElementById('nextStepBtn');
+            
+            nextStepBtn.addEventListener('click', function () {
+                const language = "french";  // Change this based on the file, e.g., "spanish", "french"
+                window.location.href = `session.php?lang=${language}`;
+            });
+        });
+    </script>
+</body>
+</html>

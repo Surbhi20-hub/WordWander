@@ -1,0 +1,137 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f8ff;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+    background: #4caf50;
+    color: white;
+    width: 100%; /* Ensure the header spans the full width */
+    box-sizing: border-box; 
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+
+  .language-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  /* Responsive Design */
+@media (max-width: 500px) {
+    .card {
+      font-size: 1.2rem;
+    }
+  }
+  .card .letter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .card .description {
+    font-size: 14px;
+    color: #555;
+  }
+  .card:hover{
+    background: #45a049;
+    transform: scale(1.1);
+  }
+
+  /* Button Container */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .next-step-btn {
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .next-step-btn:hover {
+    background: #45a049;
+  }
+
+  .pdf-section{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    /* background: #f9f9f9;
+    border-top: 2px solid #ddd; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pdf-download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pdf-download-btn:hover {
+    background-color: #45a049;
+  }
+  
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pdf-download-btn:hover {
+    background: linear-gradient(90deg, #e64a19, #f57c00);
+  }
+  
+  
